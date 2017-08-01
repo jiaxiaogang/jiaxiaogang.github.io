@@ -31,7 +31,9 @@
 	- [知乎](https://www.zhihu.com/)
 
 - ### 其它
-	- [vicarious](https://www.vicarious.com/)
-	
+	- [Vicarious](https://www.vicarious.com/)
+	- [OpenAI](https://www.openai.com/)
+	- [DeepMind](https://deepmind.com/)
+
 	
 	
