@@ -5,10 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<link rel="shortcut icon" type="image/x-icon" href="../images/aBao.ico">
-<title>SMG笔记目录</title>
-
-
+<title>SMG_NOTE</title>
 
 
 <style type="text/css">
@@ -308,7 +305,7 @@ kbd {
 }
 
 * {
-  -webkit-print-color-adjust: exact;
+	-webkit-print-color-adjust: exact;
 }
 @media screen and (min-width: 914px) {
     body {
@@ -317,12 +314,12 @@ kbd {
     }
 }
 @media print {
-  table, pre {
-    page-break-inside: avoid;
-  }
-  pre {
-    word-wrap: break-word;
-  }
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
 }
 </style>
 
@@ -335,78 +332,78 @@ kbd {
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: black;
-  background: none;
-  text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
 
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
 
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
-  background: #b3d4fc;
+	text-shadow: none;
+	background: #b3d4fc;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-  text-shadow: none;
-  background: #b3d4fc;
+	text-shadow: none;
+	background: #b3d4fc;
 }
 
 @media print {
-  code[class*="language-"],
-  pre[class*="language-"] {
-    text-shadow: none;
-  }
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #f5f2f0;
+	background: #f5f2f0;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: slategray;
+	color: slategray;
 }
 
 .token.punctuation {
-  color: #999;
+	color: #999;
 }
 
 .namespace {
-  opacity: .7;
+	opacity: .7;
 }
 
 .token.property,
@@ -416,7 +413,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #905;
+	color: #905;
 }
 
 .token.selector,
@@ -425,7 +422,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #690;
+	color: #690;
 }
 
 .token.operator,
@@ -433,80 +430,80 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: #a67f59;
-  background: hsla(0, 0%, 100%, .5);
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: #07a;
+	color: #07a;
 }
 
 .token.function {
-  color: #DD4A68;
+	color: #DD4A68;
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-  color: #e90;
+	color: #e90;
 }
 
 .token.important,
 .token.bold {
-  font-weight: bold;
+	font-weight: bold;
 }
 .token.italic {
-  font-style: italic;
+	font-style: italic;
 }
 
 .token.entity {
-  cursor: help;
+	cursor: help;
 }
 </style>
 
 <style type="text/css">
 pre.line-numbers {
-  position: relative;
-  padding-left: 3.8em;
-  counter-reset: linenumber;
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
 }
 
 pre.line-numbers > code {
-  position: relative;
+	position: relative;
 }
 
 .line-numbers .line-numbers-rows {
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  font-size: 100%;
-  left: -3.8em;
-  width: 3em; /* works for line-numbers below 1000 lines */
-  letter-spacing: -1px;
-  border-right: 1px solid #999;
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 
 }
 
-  .line-numbers-rows > span {
-    pointer-events: none;
-    display: block;
-    counter-increment: linenumber;
-  }
+	.line-numbers-rows > span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+	}
 
-    .line-numbers-rows > span:before {
-      content: counter(linenumber);
-      color: #999;
-      display: block;
-      padding-right: 0.8em;
-      text-align: right;
-    }
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
 </style>
 
 
@@ -522,125 +519,125 @@ pre.line-numbers > code {
 <li><h2 id="toc_1">框架</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/Mind.md">Mind</a><font size="1" color="#888888"> 修改时间:今天 13:55:32</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E8%87%AA%E6%88%91.md">自我</a><font size="1" color="#888888"> 修改时间:08月02日 07:33:41</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/Understand.md">Understand</a><font size="1" color="#888888"> 修改时间:今天 08:42:28</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/Decision.md">Decision</a><font size="1" color="#888888"> 修改时间:07月26日 14:19:01</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E7%9F%A5%E8%AF%86%E8%A1%A8%E7%A4%BA.md">知识表示</a><font size="1" color="#888888"> 修改时间:07月26日 14:31:50</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/3%E7%BB%B4%E6%8A%BD%E8%B1%A1%E6%A6%82%E8%BF%B0.md">3维抽象概述</a><font size="1" color="#888888"> 修改时间:07月26日 17:53:46</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/SMG%E6%A1%86%E6%9E%B6%E5%90%84%E9%98%B6%E6%AE%B5.md">SMG框架各阶段</a><font size="1" color="#888888"> 修改时间:07月26日 17:58:55</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.md">神经网络</a><font size="1" color="#888888"> 修改时间:07月26日 18:00:04</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/Input.md">Input</a><font size="1" color="#888888"> 修改时间:07月26日 13:47:23</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E6%A1%86%E6%9E%B617.5.7%E8%A1%A8%E8%BF%B0.md">框架17.5.7表述</a><font size="1" color="#888888"> 修改时间:07月26日 13:52:48</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E5%BC%80%E5%8F%91%E4%BB%BB%E5%8A%A1.md">开发任务</a><font size="1" color="#888888"> 修改时间:07月26日 14:12:58</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E6%95%B0%E6%8D%AE.md">数据</a><font size="1" color="#888888"> 修改时间:07月26日 14:19:58</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E7%B1%BB%E6%AF%94%E6%8E%A8%E7%90%86.md">类比推理</a><font size="1" color="#888888"> 修改时间:07月26日 15:28:22</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E5%BD%92%E7%BA%B3%E6%8E%A8%E7%90%86.md">归纳推理</a><font size="1" color="#888888"> 修改时间:07月26日 17:30:44</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E9%94%99%E8%A7%89%E7%A0%94%E7%A9%B6.md">错觉研究</a><font size="1" color="#888888"> 修改时间:07月26日 17:31:21</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E6%97%B6%E9%97%B4&amp;%E7%A9%BA%E9%97%B4.md">时间&amp;空间</a><font size="1" color="#888888"> 修改时间:07月26日 17:36:17</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E6%B3%A8%E6%84%8F%E5%8A%9B.md">注意力</a><font size="1" color="#888888"> 修改时间:07月26日 17:37:27</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E9%97%AE%E9%A2%98.md">问题</a><font size="1" color="#888888"> 修改时间:07月26日 17:37:59</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/OUTPUT.md">OUTPUT</a><font size="1" color="#888888"> 修改时间:07月26日 18:00:36</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E5%88%9B%E9%80%A0%E5%8A%9B.md">创造力</a><font size="1" color="#888888"> 修改时间:07月26日 18:01:20</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/Mind.md">Mind</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E8%87%AA%E6%88%91.md">自我</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/Understand.md">Understand</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/Decision.md">Decision</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E7%9F%A5%E8%AF%86%E8%A1%A8%E7%A4%BA.md">知识表示</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/3%E7%BB%B4%E6%8A%BD%E8%B1%A1%E6%A6%82%E8%BF%B0.md">3维抽象概述</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/SMG%E6%A1%86%E6%9E%B6%E5%90%84%E9%98%B6%E6%AE%B5.md">SMG框架各阶段</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.md">神经网络</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/Input.md">Input</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E6%A1%86%E6%9E%B617.5.7%E8%A1%A8%E8%BF%B0.md">框架17.5.7表述</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E5%BC%80%E5%8F%91%E4%BB%BB%E5%8A%A1.md">开发任务</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E6%95%B0%E6%8D%AE.md">数据</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E7%B1%BB%E6%AF%94%E6%8E%A8%E7%90%86.md">类比推理</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E5%BD%92%E7%BA%B3%E6%8E%A8%E7%90%86.md">归纳推理</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E9%94%99%E8%A7%89%E7%A0%94%E7%A9%B6.md">错觉研究</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E6%97%B6%E9%97%B4&amp;%E7%A9%BA%E9%97%B4.md">时间&amp;空间</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E6%B3%A8%E6%84%8F%E5%8A%9B.md">注意力</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E9%97%AE%E9%A2%98.md">问题</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/OUTPUT.md">OUTPUT</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E5%88%9B%E9%80%A0%E5%8A%9B.md">创造力</a></li>
 </ul></li>
 <li><h2 id="toc_2">手写笔记</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/Note3.md">Note3</a><font size="1" color="#888888"> 修改时间:今天 08:58:29</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/Note2.md">Note2</a><font size="1" color="#888888"> 修改时间:07月26日 18:10:08</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/Note1.md">Note1</a><font size="1" color="#888888"> 修改时间:07月26日 18:04:33</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/Note3.md">Note3</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/Note2.md">Note2</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%89%8B%E5%86%99%E7%AC%94%E8%AE%B0/Note1.md">Note1</a></li>
 </ul></li>
 <li><h2 id="toc_3">学习</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80.md">机器学习基础</a><font size="1" color="#888888"> 修改时间:07月27日 07:38:26</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86%E8%A1%A8%E7%A4%BA%E8%A1%A8%E8%BE%BE%E6%96%B9%E6%B3%95%E5%9F%BA%E7%A1%80.md">知识表示表达方法基础</a><font size="1" color="#888888"> 修改时间:07月27日 07:42:49</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80.md">机器学习基础</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86%E8%A1%A8%E7%A4%BA%E8%A1%A8%E8%BE%BE%E6%96%B9%E6%B3%95%E5%9F%BA%E7%A1%80.md">知识表示表达方法基础</a></li>
 <li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%80%E7%A7%8D%E7%8E%B0%E4%BB%A3%E7%9A%84%E6%96%B9%E6%B3%95(StuartRussell).md">人工智能一种现代的方法(StuartRussell)</a></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/TheUseOfKnowledgeInAnalogyAndInduction%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.md">TheUseOfKnowledgeInAnalogyAndInduction读书笔记</a><font size="1" color="#888888"> 修改时间:07月27日 07:45:10</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E8%AE%A4%E7%9F%A5%E7%A5%9E%E7%BB%8F%E7%A7%91%E5%AD%A6-%E5%85%B3%E4%BA%8E%E5%BF%83%E6%99%BA%E7%9A%84%E7%94%9F%E7%89%A9%E5%AD%A6.md">认知神经科学-关于心智的生物学</a><font size="1" color="#888888"> 修改时间:07月27日 07:45:38</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E6%83%85%E6%84%9F%E6%9C%BA%E5%99%A8.md">情感机器</a><font size="1" color="#888888"> 修改时间:07月27日 08:15:31</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E9%98%BF%E5%85%B0%E5%9B%BE%E7%81%B5.md">阿兰图灵</a><font size="1" color="#888888"> 修改时间:07月27日 08:16:20</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E7%94%9F%E7%89%A9%E8%84%91%E5%AD%A6.md">生物脑学</a><font size="1" color="#888888"> 修改时间:07月27日 14:28:10</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E5%8F%8C%E8%84%91%E8%AE%B0.md">双脑记</a><font size="1" color="#888888"> 修改时间:07月27日 08:21:35</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/List%E8%AF%AD%E8%A8%80.md">List语言</a><font size="1" color="#888888"> 修改时间:07月27日 08:52:56</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/python%E8%AF%AD%E8%A8%80.md">python语言</a><font size="1" color="#888888"> 修改时间:07月27日 09:18:33</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/TheUseOfKnowledgeInAnalogyAndInduction%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.md">TheUseOfKnowledgeInAnalogyAndInduction读书笔记</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E8%AE%A4%E7%9F%A5%E7%A5%9E%E7%BB%8F%E7%A7%91%E5%AD%A6-%E5%85%B3%E4%BA%8E%E5%BF%83%E6%99%BA%E7%9A%84%E7%94%9F%E7%89%A9%E5%AD%A6.md">认知神经科学-关于心智的生物学</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E6%83%85%E6%84%9F%E6%9C%BA%E5%99%A8.md">情感机器</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E9%98%BF%E5%85%B0%E5%9B%BE%E7%81%B5.md">阿兰图灵</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E7%94%9F%E7%89%A9%E8%84%91%E5%AD%A6.md">生物脑学</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/%E5%8F%8C%E8%84%91%E8%AE%B0.md">双脑记</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/List%E8%AF%AD%E8%A8%80.md">List语言</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%AD%A6%E4%B9%A0/python%E8%AF%AD%E8%A8%80.md">python语言</a></li>
 </ul></li>
 <li><h2 id="toc_4">Light及应用</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/Light%E5%8F%8A%E5%BA%94%E7%94%A8/Light.md">Light</a><font size="1" color="#888888"> 修改时间:07月27日 09:27:44</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/Light%E5%8F%8A%E5%BA%94%E7%94%A8/%E5%BA%94%E7%94%A8.md">应用</a><font size="1" color="#888888"> 修改时间:07月27日 09:28:14</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/Light%E5%8F%8A%E5%BA%94%E7%94%A8/DeepLearning%E4%B8%8B%E6%AD%A5%E9%A2%84%E8%A8%80.md">DeepLearning下步预言</a><font size="1" color="#888888"> 修改时间:07月27日 09:28:32</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/Light%E5%8F%8A%E5%BA%94%E7%94%A8/Light.md">Light</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/Light%E5%8F%8A%E5%BA%94%E7%94%A8/%E5%BA%94%E7%94%A8.md">应用</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/Light%E5%8F%8A%E5%BA%94%E7%94%A8/DeepLearning%E4%B8%8B%E6%AD%A5%E9%A2%84%E8%A8%80.md">DeepLearning下步预言</a></li>
 </ul></li>
 <li><h2 id="toc_5">DataLanguage</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/DataLanguage/%E5%89%8D%E8%A8%80.md">前言</a><font size="1" color="#888888"> 修改时间:07月27日 09:19:41</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/DataLanguage/17%E9%97%A8%E6%B4%BE.md">17门派</a><font size="1" color="#888888"> 修改时间:07月27日 09:22:09</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/DataLanguage/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92.md">学习计划</a><font size="1" color="#888888"> 修改时间:07月27日 09:23:23</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/DataLanguage/AIFoundation.md">AIFoundation</a><font size="1" color="#888888"> 修改时间:07月27日 09:24:08</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/DataLanguage/%E5%89%8D%E8%A8%80.md">前言</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/DataLanguage/17%E9%97%A8%E6%B4%BE.md">17门派</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/DataLanguage/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92.md">学习计划</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/DataLanguage/AIFoundation.md">AIFoundation</a></li>
 </ul></li>
 <li><h2 id="toc_6">资料</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%B5%84%E6%96%99/%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6%E5%88%86%E6%9E%90.md">发展现状分析</a><font size="1" color="#888888"> 修改时间:07月28日 09:12:25</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%B5%84%E6%96%99/%E4%B8%89%E6%96%B9%E5%BA%93%E6%88%96%E5%B7%A5%E5%85%B7.md">三方库或工具</a><font size="1" color="#888888"> 修改时间:07月26日 13:31:43</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%B5%84%E6%96%99/%E6%97%A7%E8%B5%84%E6%96%99.md">旧资料</a><font size="1" color="#888888"> 修改时间:07月26日 13:39:25</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%B5%84%E6%96%99/%E5%85%B6%E5%AE%83.md">其它</a><font size="1" color="#888888"> 修改时间:07月26日 13:40:32</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%B5%84%E6%96%99/%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6%E5%88%86%E6%9E%90.md">发展现状分析</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%B5%84%E6%96%99/%E4%B8%89%E6%96%B9%E5%BA%93%E6%88%96%E5%B7%A5%E5%85%B7.md">三方库或工具</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%B5%84%E6%96%99/%E6%97%A7%E8%B5%84%E6%96%99.md">旧资料</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%B5%84%E6%96%99/%E5%85%B6%E5%AE%83.md">其它</a></li>
 </ul></li>
 <li><h2 id="toc_7">视觉</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%A7%86%E8%A7%89/%E8%A7%86%E8%A7%89.md">视觉</a><font size="1" color="#888888"> 修改时间:07月27日 09:29:34</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E8%A7%86%E8%A7%89/%E8%A7%86%E8%A7%89.md">视觉</a></li>
 </ul></li>
 <li><h2 id="toc_8">当下不开发的</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BD%93%E4%B8%8B%E4%B8%8D%E5%BC%80%E5%8F%91%E7%9A%84/GC.md">GC</a><font size="1" color="#888888"> 修改时间:07月27日 09:29:57</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BD%93%E4%B8%8B%E4%B8%8D%E5%BC%80%E5%8F%91%E7%9A%84/%E8%81%94%E6%83%B3%E5%8A%9F%E8%83%BD.md">联想功能</a><font size="1" color="#888888"> 修改时间:07月27日 09:30:17</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BD%93%E4%B8%8B%E4%B8%8D%E5%BC%80%E5%8F%91%E7%9A%84/%E6%83%B3%E5%83%8F%E5%8A%9B.md">想像力</a><font size="1" color="#888888"> 修改时间:07月27日 09:30:40</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BD%93%E4%B8%8B%E4%B8%8D%E5%BC%80%E5%8F%91%E7%9A%84/%E6%97%A0%E6%84%8F%E8%AF%86%E7%9A%84%E6%80%9D%E8%80%83.md">无意识的思考</a><font size="1" color="#888888"> 修改时间:07月27日 09:31:39</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BD%93%E4%B8%8B%E4%B8%8D%E5%BC%80%E5%8F%91%E7%9A%84/GC.md">GC</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BD%93%E4%B8%8B%E4%B8%8D%E5%BC%80%E5%8F%91%E7%9A%84/%E8%81%94%E6%83%B3%E5%8A%9F%E8%83%BD.md">联想功能</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BD%93%E4%B8%8B%E4%B8%8D%E5%BC%80%E5%8F%91%E7%9A%84/%E6%83%B3%E5%83%8F%E5%8A%9B.md">想像力</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BD%93%E4%B8%8B%E4%B8%8D%E5%BC%80%E5%8F%91%E7%9A%84/%E6%97%A0%E6%84%8F%E8%AF%86%E7%9A%84%E6%80%9D%E8%80%83.md">无意识的思考</a></li>
 </ul></li>
 <li><h2 id="toc_9">开发</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BC%80%E5%8F%91/17.07.19.md">17.07.19</a><font size="1" color="#888888"> 修改时间:07月27日 09:32:36</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E5%BC%80%E5%8F%91/17.07.19.md">17.07.19</a></li>
 </ul></li>
 <li><h2 id="toc_10">SMG</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/SMG/%E5%BC%80%E5%8F%91%E4%BB%BB%E5%8A%A1.md">开发任务</a> <font size="1" color="#888888"> 修改时间:07月28日 09:06:53</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/SMG/%E7%B1%BB%E4%BA%BA%E7%9A%84%E5%AD%A6%E4%B9%A0%E9%A1%B9%E7%9B%AE.md">类人的学习项目</a><font size="1" color="#888888"> 修改时间:07月26日 10:23:27</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/SMG/Temp.md">Temp</a><font size="1" color="#888888"> 修改时间:07月26日 10:09:30</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/SMG/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90.md">记忆系统结构分析</a><font size="1" color="#888888"> 修改时间:07月26日 10:20:45</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/SMG/%E5%BC%80%E5%8F%91%E4%BB%BB%E5%8A%A1.md">开发任务</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/SMG/%E7%B1%BB%E4%BA%BA%E7%9A%84%E5%AD%A6%E4%B9%A0%E9%A1%B9%E7%9B%AE.md">类人的学习项目</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/SMG/Temp.md">Temp</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/SMG/%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90.md">记忆系统结构分析</a></li>
 </ul></li>
 <li><h2 id="toc_11">iphone备忘录</h2>
 
 <ul>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E4%B8%B4%E6%97%B6.md">临时</a><font size="1" color="#888888"> 修改时间:07月26日 10:22:54</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99.md">参考资料</a><font size="1" color="#888888"> 修改时间:07月26日 10:35:59</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/onenote%E7%AC%94%E8%AE%B0.md">onenote笔记</a><font size="1" color="#888888"> 修改时间:07月26日 10:43:07</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E7%AC%AC%E4%B8%80%E4%BB%A3%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%AE%BE%E8%AE%A1.md">第一代人工智能设计</a><font size="1" color="#888888"> 修改时间:07月26日 10:44:53</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/output.md">output</a><font size="1" color="#888888"> 修改时间:07月26日 10:46:31</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E6%9E%B6%E6%9E%84.md">架构</a><font size="1" color="#888888"> 修改时间:07月26日 10:52:02</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E7%90%86%E8%A7%A3%E7%B3%BB%E7%BB%9F.md">理解系统</a><font size="1" color="#888888"> 修改时间:07月26日 10:53:11</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.md">计算机视觉</a><font size="1" color="#888888"> 修改时间:07月26日 10:56:00</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.md">知识图谱</a><font size="1" color="#888888"> 修改时间:07月26日 11:19:21</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%BA%94%E7%94%A8%E5%B1%82%E8%AE%A1%E5%88%92.md">应用层计划</a><font size="1" color="#888888"> 修改时间:07月26日 11:20:43</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%A4%A7%E8%84%91%E6%A8%A1%E5%9D%97.md">大脑模块</a><font size="1" color="#888888"> 修改时间:07月26日 11:26:06</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E7%AC%AC%E4%BA%8C%E4%BB%A3%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%AE%BE%E8%AE%A1.md">第二代人工智能设计</a><font size="1" color="#888888"> 修改时间:07月26日 11:30:20</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%AE%B0%E5%BF%86%E6%A8%A1%E5%9D%97.md">记忆模块</a><font size="1" color="#888888"> 修改时间:07月26日 11:34:13</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%A5%BD%E5%A5%87%E5%BF%83.md">好奇心</a><font size="1" color="#888888"> 修改时间:07月26日 12:55:53</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E6%84%9F%E8%A7%89%E7%B3%BB%E7%BB%9F.md">感觉系统</a><font size="1" color="#888888"> 修改时间:07月26日 13:05:08</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86-%E8%87%AA%E7%84%B6%E8%AF%AD%E4%B9%89%E7%B3%BB%E7%BB%9F.md">自然语言处理-自然语义系统</a><font size="1" color="#888888"> 修改时间:07月26日 13:06:24</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%BC%80%E5%8F%91%E8%AE%A1%E5%88%92.md">开发计划</a><font size="1" color="#888888"> 修改时间:07月26日 13:06:59</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%AE%B0%E5%BF%86%E6%A8%A1%E5%9D%97%3C=%3E%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.md">记忆模块&lt;=&gt;知识图谱</a><font size="1" color="#888888"> 修改时间:07月26日 13:08:34</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/INPUT-%E7%9F%A2%E9%87%8F%E9%9F%B3%E9%A2%91.md">INPUT-矢量音频</a><font size="1" color="#888888"> 修改时间:07月26日 13:28:43</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%A4%87%E5%AD%A6%E8%B5%84%E6%96%99.md">备学资料</a><font size="1" color="#888888"> 修改时间:07月26日 13:15:12</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/OUPUT-%E5%AD%97%E7%AC%A6%E4%B8%B2.md">OUPUT-字符串</a><font size="1" color="#888888"> 修改时间:07月26日 13:16:18</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/INPUT_%E6%B3%A8%E6%84%8F%E5%8A%9B.md">INPUT_注意力</a><font size="1" color="#888888"> 修改时间:07月26日 13:17:10</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%A1%8C%E4%B8%BA%E4%B8%8E%E8%83%BD%E5%8A%9B.md">行为与能力</a><font size="1" color="#888888"> 修改时间:07月26日 13:19:43</font></li>
-<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E4%B8%BA%E6%8E%A8%E5%8A%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E5%8F%91%E5%B1%95%E6%89%80%E4%BD%9C%E7%9A%84%E6%80%9D%E8%80%83.md">为推动人工智能的发展所作的思考</a><font size="1" color="#888888"> 修改时间:07月26日 13:27:34</font></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E4%B8%B4%E6%97%B6.md">临时</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99.md">参考资料</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/onenote%E7%AC%94%E8%AE%B0.md">onenote笔记</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E7%AC%AC%E4%B8%80%E4%BB%A3%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%AE%BE%E8%AE%A1.md">第一代人工智能设计</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/output.md">output</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E6%9E%B6%E6%9E%84.md">架构</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E7%90%86%E8%A7%A3%E7%B3%BB%E7%BB%9F.md">理解系统</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89.md">计算机视觉</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.md">知识图谱</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%BA%94%E7%94%A8%E5%B1%82%E8%AE%A1%E5%88%92.md">应用层计划</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%A4%A7%E8%84%91%E6%A8%A1%E5%9D%97.md">大脑模块</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E7%AC%AC%E4%BA%8C%E4%BB%A3%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%AE%BE%E8%AE%A1.md">第二代人工智能设计</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%AE%B0%E5%BF%86%E6%A8%A1%E5%9D%97.md">记忆模块</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%A5%BD%E5%A5%87%E5%BF%83.md">好奇心</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E6%84%9F%E8%A7%89%E7%B3%BB%E7%BB%9F.md">感觉系统</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86-%E8%87%AA%E7%84%B6%E8%AF%AD%E4%B9%89%E7%B3%BB%E7%BB%9F.md">自然语言处理-自然语义系统</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%BC%80%E5%8F%91%E8%AE%A1%E5%88%92.md">开发计划</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%AE%B0%E5%BF%86%E6%A8%A1%E5%9D%97%3C=%3E%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.md">记忆模块&lt;=&gt;知识图谱</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/INPUT-%E7%9F%A2%E9%87%8F%E9%9F%B3%E9%A2%91.md">INPUT-矢量音频</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E5%A4%87%E5%AD%A6%E8%B5%84%E6%96%99.md">备学资料</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/OUPUT-%E5%AD%97%E7%AC%A6%E4%B8%B2.md">OUPUT-字符串</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/INPUT_%E6%B3%A8%E6%84%8F%E5%8A%9B.md">INPUT_注意力</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E8%A1%8C%E4%B8%BA%E4%B8%8E%E8%83%BD%E5%8A%9B.md">行为与能力</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/iphone%E5%A4%87%E5%BF%98%E5%BD%95/%E4%B8%BA%E6%8E%A8%E5%8A%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E5%8F%91%E5%B1%95%E6%89%80%E4%BD%9C%E7%9A%84%E6%80%9D%E8%80%83.md">为推动人工智能的发展所作的思考</a></li>
 </ul></li>
 </ul>
 
