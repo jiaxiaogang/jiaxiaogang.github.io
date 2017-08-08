@@ -28,6 +28,7 @@
 	- LICEcap <font color="green">`//录屏`</font>
 	- MacDown <font color="green">`//md神器`</font>
 	- Typora <font color="green">`//md神器2`</font>
+	- 清歌输入法 <font color="green">`//个人认为mac上最好用的五笔输入法`</font>
 	- Office2011
 	- Adobe Photoshop CS6	
 	 
