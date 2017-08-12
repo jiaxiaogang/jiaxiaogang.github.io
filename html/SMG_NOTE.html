@@ -305,7 +305,7 @@ kbd {
 }
 
 * {
-	-webkit-print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
 }
 @media screen and (min-width: 914px) {
     body {
@@ -314,12 +314,12 @@ kbd {
     }
 }
 @media print {
-	table, pre {
-		page-break-inside: avoid;
-	}
-	pre {
-		word-wrap: break-word;
-	}
+  table, pre {
+    page-break-inside: avoid;
+  }
+  pre {
+    word-wrap: break-word;
+  }
 }
 </style>
 
@@ -332,78 +332,78 @@ kbd {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: black;
-	background: none;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
+  color: black;
+  background: none;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
 
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
 
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
-	background: #b3d4fc;
+  text-shadow: none;
+  background: #b3d4fc;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
-	background: #b3d4fc;
+  text-shadow: none;
+  background: #b3d4fc;
 }
 
 @media print {
-	code[class*="language-"],
-	pre[class*="language-"] {
-		text-shadow: none;
-	}
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #f5f2f0;
+  background: #f5f2f0;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: slategray;
+  color: slategray;
 }
 
 .token.punctuation {
-	color: #999;
+  color: #999;
 }
 
 .namespace {
-	opacity: .7;
+  opacity: .7;
 }
 
 .token.property,
@@ -413,7 +413,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: #905;
+  color: #905;
 }
 
 .token.selector,
@@ -422,7 +422,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #690;
+  color: #690;
 }
 
 .token.operator,
@@ -430,80 +430,80 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	color: #a67f59;
-	background: hsla(0, 0%, 100%, .5);
+  color: #a67f59;
+  background: hsla(0, 0%, 100%, .5);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #07a;
+  color: #07a;
 }
 
 .token.function {
-	color: #DD4A68;
+  color: #DD4A68;
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-	color: #e90;
+  color: #e90;
 }
 
 .token.important,
 .token.bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 .token.italic {
-	font-style: italic;
+  font-style: italic;
 }
 
 .token.entity {
-	cursor: help;
+  cursor: help;
 }
 </style>
 
 <style type="text/css">
 pre.line-numbers {
-	position: relative;
-	padding-left: 3.8em;
-	counter-reset: linenumber;
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
 }
 
 pre.line-numbers > code {
-	position: relative;
+  position: relative;
 }
 
 .line-numbers .line-numbers-rows {
-	position: absolute;
-	pointer-events: none;
-	top: 0;
-	font-size: 100%;
-	left: -3.8em;
-	width: 3em; /* works for line-numbers below 1000 lines */
-	letter-spacing: -1px;
-	border-right: 1px solid #999;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
 
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
 }
 
-	.line-numbers-rows > span {
-		pointer-events: none;
-		display: block;
-		counter-increment: linenumber;
-	}
+  .line-numbers-rows > span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber;
+  }
 
-		.line-numbers-rows > span:before {
-			content: counter(linenumber);
-			color: #999;
-			display: block;
-			padding-right: 0.8em;
-			text-align: right;
-		}
+    .line-numbers-rows > span:before {
+      content: counter(linenumber);
+      color: #999;
+      display: block;
+      padding-right: 0.8em;
+      text-align: right;
+    }
 </style>
 
 
@@ -539,6 +539,7 @@ pre.line-numbers > code {
 <li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E9%97%AE%E9%A2%98.md">问题</a></li>
 <li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/OUTPUT.md">OUTPUT</a></li>
 <li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E5%88%9B%E9%80%A0%E5%8A%9B.md">创造力</a></li>
+<li><a href="https://github.com/jiaxiaogang/SMG_NOTE/blob/master/%E6%A1%86%E6%9E%B6/%E6%80%9D%E8%80%83%E7%9A%84%E5%BC%95%E5%AD%90.md">思考的引子</a></li>
 </ul></li>
 <li><h2 id="toc_2">手写笔记</h2>
 

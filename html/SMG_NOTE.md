@@ -24,6 +24,7 @@
 	* [问题](https://github.com/jiaxiaogang/SMG_NOTE/blob/master/框架/问题.md)
 	* [OUTPUT](https://github.com/jiaxiaogang/SMG_NOTE/blob/master/框架/OUTPUT.md)
 	* [创造力](https://github.com/jiaxiaogang/SMG_NOTE/blob/master/框架/创造力.md)
+	* [思考的引子](https://github.com/jiaxiaogang/SMG_NOTE/blob/master/框架/思考的引子.md)
 
 - ## 手写笔记
 
