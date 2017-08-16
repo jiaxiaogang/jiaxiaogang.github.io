@@ -22,6 +22,7 @@
 	- [在线繁体字转换工具](http://www.aies.cn/)
 	- [在线适量图转换](https://www.vectorizer.io/)
 	- [百度翻译](http://fanyi.baidu.com/translate?aldtype=16047&keyfrom=baidu&lang=auto2zh&query=&smartresult=dict#auto/zh/)
+	- [GitBook](https://www.gitbook.com/)
 
 
 - ### 软件下载
