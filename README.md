@@ -1,2 +1,2 @@
-# [点击预览](http://www.jiaxiaogang.cn)
+# [点击预览](http://jiaxiaogang.github.io)
 
