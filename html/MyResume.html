@@ -5,12 +5,13 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <link rel="alternate" media="handheld" href="#" />
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/x-icon" href="../images/aBao.png">
 <title>MyResume</title>
 <meta content="" name="description">
 <meta content="" name="keywords">
 </head>
-<body>
+<body class="resume-modern">
 <div id="body">
     <div id="container">
 <style type="text/css">
@@ -377,6 +378,605 @@ content:"...";
 	left:41%;
 	top:39px;
 	z-index:100;
+}
+
+body.resume-modern {
+  --resume-bg: #050711;
+  --resume-panel: rgba(11, 18, 42, .72);
+  --resume-panel-strong: rgba(16, 25, 55, .86);
+  --resume-cyan: #42ecff;
+  --resume-violet: #d56bff;
+  --resume-green: #55ffbb;
+  --resume-text: #e9f7ff;
+  --resume-muted: #94a9cd;
+  --resume-line: rgba(144, 239, 255, .22);
+  min-height: 100vh;
+  color: var(--resume-text);
+  background:
+    radial-gradient(circle at 18% 8%, rgba(66, 236, 255, .28), transparent 28rem),
+    radial-gradient(circle at 86% 12%, rgba(213, 107, 255, .26), transparent 26rem),
+    radial-gradient(circle at 70% 76%, rgba(85, 255, 187, .16), transparent 30rem),
+    linear-gradient(135deg, #050711 0%, #101733 48%, #060714 100%);
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+body.resume-modern::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.72), transparent 82%);
+}
+
+body.resume-modern::after {
+  content: "";
+  position: fixed;
+  inset: -18%;
+  pointer-events: none;
+  background: conic-gradient(from 180deg, transparent, rgba(66, 236, 255, .11), transparent, rgba(213, 107, 255, .11), transparent);
+  filter: blur(44px);
+  opacity: .7;
+  animation: resumeDrift 22s linear infinite;
+}
+
+@keyframes resumeDrift {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes resumeFloatIn {
+  from { opacity: 0; transform: translateY(22px); filter: blur(7px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes resumeShine {
+  50% { background-position: 100% center; }
+}
+
+body.resume-modern #body,
+body.resume-modern #container,
+body.resume-modern .mr_created {
+  position: relative;
+  z-index: 1;
+}
+
+body.resume-modern #container {
+  padding: 48px 18px 64px;
+}
+
+body.resume-modern .mr_myresume_l {
+  width: min(100%, 920px);
+  margin-bottom: 0;
+}
+
+body.resume-modern .mrcenter {
+  margin: 0 auto;
+}
+
+body.resume-modern .mr_w604 {
+  width: min(100%, 780px);
+}
+
+body.resume-modern #mr_mr_head {
+  margin-bottom: 24px;
+  animation: resumeFloatIn .7s ease both;
+}
+
+body.resume-modern .m_portrait,
+body.resume-modern .mr_top_bg {
+  height: 230px;
+  overflow: hidden;
+  border: 1px solid var(--resume-line);
+  border-bottom: none;
+  border-radius: 34px 34px 0 0;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(255,255,255,.2), transparent 5rem),
+    radial-gradient(circle at 34% 34%, rgba(66, 236, 255, .34), transparent 14rem),
+    radial-gradient(circle at 72% 20%, rgba(213, 107, 255, .26), transparent 16rem),
+    linear-gradient(135deg, rgba(13, 24, 54, .96), rgba(5, 8, 22, .72));
+  box-shadow: 0 30px 90px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.12);
+}
+
+body.resume-modern .m_portrait::before,
+body.resume-modern .m_portrait::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  width: 340px;
+  height: 340px;
+  border: 1px solid rgba(66, 236, 255, .22);
+  border-radius: 44% 56% 50% 50%;
+  transform: translate(-50%, -50%) rotate(-18deg) scaleY(.42);
+  box-shadow: 0 0 60px rgba(66, 236, 255, .14), inset 0 0 36px rgba(213, 107, 255, .08);
+}
+
+body.resume-modern .m_portrait::after {
+  width: 230px;
+  height: 230px;
+  border-color: rgba(213, 107, 255, .28);
+  transform: translate(-50%, -50%) rotate(52deg) scaleY(.5);
+}
+
+body.resume-modern .m_portrait .opa,
+body.resume-modern .mr_left_bg,
+body.resume-modern .mr_right_bg {
+  display: none;
+}
+
+body.resume-modern .m_portrait > img:not(.opa) {
+  position: absolute;
+  left: 50%;
+  top: 76px;
+  z-index: 3;
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border: 4px solid rgba(223, 252, 255, .9);
+  border-radius: 50%;
+  box-shadow: 0 0 46px rgba(66, 236, 255, .38), 0 22px 46px rgba(0,0,0,.34);
+  transform: translateX(-50%);
+}
+
+body.resume-modern .mr_baseinfo {
+  min-height: auto;
+  padding: 66px 28px 30px;
+  color: var(--resume-text);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(66, 236, 255, .12), transparent 18rem),
+    linear-gradient(145deg, var(--resume-panel-strong), rgba(14, 18, 36, .54));
+  border: 1px solid var(--resume-line);
+  border-top: none;
+  border-radius: 0 0 34px 34px;
+  box-shadow: 0 30px 90px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter: blur(22px);
+}
+
+body.resume-modern .mr_name {
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: linear-gradient(90deg, #fff, var(--resume-cyan), var(--resume-violet), #fff);
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: clamp(34px, 6vw, 58px);
+  font-weight: 900;
+  letter-spacing: .06em;
+  line-height: 1.1;
+  animation: resumeShine 7s ease-in-out infinite;
+}
+
+body.resume-modern .mr_intro,
+body.resume-modern .mr_p_introduce .mr_intro {
+  width: auto;
+  color: #bfd0ed;
+  font-size: 16px;
+}
+
+body.resume-modern a {
+  color: #8ff7ff;
+  text-decoration: none;
+  transition: color .22s ease, text-shadow .22s ease;
+}
+
+body.resume-modern a:hover {
+  color: #fff;
+  text-shadow: 0 0 18px rgba(93, 235, 255, .58);
+}
+
+body.resume-modern .mr_p_info {
+  color: var(--resume-muted);
+}
+
+body.resume-modern .info_t,
+body.resume-modern .info_b {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+body.resume-modern .shenfen,
+body.resume-modern .base_info,
+body.resume-modern .mobile,
+body.resume-modern .email,
+body.resume-modern .mr_sns a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 6px 12px;
+  color: #dffcff;
+  background: linear-gradient(135deg, rgba(66, 236, 255, .13), rgba(213, 107, 255, .1));
+  border: 1px solid rgba(144, 239, 255, .22);
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+body.resume-modern .mr_p_info i,
+body.resume-modern .mr_job_info i,
+body.resume-modern .mr_sns i {
+  display: none;
+}
+
+body.resume-modern .mr_sns {
+  padding-top: 14px;
+}
+
+body.resume-modern .mr_sns a {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+body.resume-modern .mr_sns a::before {
+  content: "GitHub";
+}
+
+body.resume-modern .mr_content {
+  padding: 34px 28px 24px;
+  color: var(--resume-text);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(66, 236, 255, .13), transparent 22rem),
+    linear-gradient(145deg, var(--resume-panel), rgba(14, 18, 36, .5));
+  border: 1px solid var(--resume-line);
+  border-radius: 34px;
+  box-shadow: 0 30px 90px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter: blur(22px);
+  animation: resumeFloatIn .8s .12s ease both;
+}
+
+body.resume-modern .mr_moudle_head {
+  margin: 10px 0 22px;
+}
+
+body.resume-modern .mr_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.resume-modern .mr_title .mr_title_l,
+body.resume-modern .mr_title .mr_title_r {
+  flex: 1;
+  width: auto;
+  border-top: 1px solid rgba(144, 239, 255, .18);
+  box-shadow: 0 0 18px rgba(66, 236, 255, .14);
+}
+
+body.resume-modern .mr_title .mr_title_c,
+body.resume-modern .cust_title span {
+  color: #fff;
+  background: linear-gradient(135deg, rgba(66, 236, 255, .24), rgba(213, 107, 255, .2));
+  border: 1px solid rgba(144, 239, 255, .28);
+  border-radius: 999px;
+  box-shadow: 0 0 28px rgba(66, 236, 255, .16), inset 0 1px 0 rgba(255,255,255,.1);
+  font-size: 18px;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+
+body.resume-modern .mr_moudle_content {
+  color: #d8e6ff;
+  font-size: 15px;
+}
+
+body.resume-modern .mr_jobe_list,
+body.resume-modern .mr_wu_show,
+body.resume-modern .expectjob_list .mr_job_des,
+body.resume-modern .mr_wo_show {
+  position: relative;
+  margin-bottom: 18px;
+  padding: 18px 20px;
+  color: #d8e6ff;
+  background: rgba(255, 255, 255, .055);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 22px;
+  box-shadow: 0 16px 42px rgba(0,0,0,.18);
+  transition: transform .22s ease, border-color .22s ease, background .22s ease, box-shadow .22s ease;
+}
+
+body.resume-modern .mr_jobe_list::before,
+body.resume-modern .mr_wu_show::before,
+body.resume-modern .expectjob_list .mr_job_des::before,
+body.resume-modern .mr_wo_show::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  bottom: 18px;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(var(--resume-cyan), var(--resume-violet));
+  box-shadow: 0 0 18px rgba(57, 237, 255, .55);
+}
+
+body.resume-modern .mr_jobe_list:hover,
+body.resume-modern .mr_wu_show:hover,
+body.resume-modern .expectjob_list .mr_job_des:hover,
+body.resume-modern .mr_wo_show:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,.085);
+  border-color: rgba(136, 241, 255, .34);
+  box-shadow: 0 20px 52px rgba(0,0,0,.28), 0 0 28px rgba(66, 236, 255, .08);
+}
+
+body.resume-modern .mr_content_l .l2 h4,
+body.resume-modern .mr_content_l .l2 a.projectTitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 850;
+}
+
+body.resume-modern .mr_content_l .l2 p,
+body.resume-modern .mr_content_l .l2 span,
+body.resume-modern .mr_content_r span {
+  color: var(--resume-muted);
+}
+
+body.resume-modern .mr_content_r span {
+  display: inline-flex;
+  padding: 5px 10px;
+  background: rgba(66, 236, 255, .1);
+  border: 1px solid rgba(66, 236, 255, .18);
+  border-radius: 999px;
+}
+
+body.resume-modern .mr_content_m {
+  color: #d8e6ff;
+  line-height: 1.85;
+}
+
+body.resume-modern .mr_content_m p,
+body.resume-modern .mr_wu_con_m p,
+body.resume-modern .mr_self_r p,
+body.resume-modern .mr_expjob_content p {
+  margin: 7px 0;
+}
+
+body.resume-modern font[color="#70AA70"] {
+  color: var(--resume-green) !important;
+}
+
+body.resume-modern #worksShow ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding-left: 0;
+}
+
+body.resume-modern #worksShow li {
+  list-style: none;
+  padding: 14px 16px;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 18px;
+}
+
+body.resume-modern .mr_skill_con {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 0;
+}
+
+body.resume-modern .mr_skill_con .mr_skill_name {
+  flex: 0 0 110px;
+  width: auto;
+  color: #dffcff;
+  text-align: right;
+  font-weight: 750;
+}
+
+body.resume-modern .mr_skill_con .mr_skill_plan {
+  flex: 1;
+  width: auto;
+  height: 10px;
+  margin-right: 0;
+  background: rgba(255,255,255,.09);
+  border: 1px solid rgba(144,239,255,.12);
+  border-radius: 999px;
+}
+
+body.resume-modern .mr_skill_plan em {
+  height: 100%;
+  background: linear-gradient(90deg, var(--resume-cyan), var(--resume-violet), var(--resume-green));
+  box-shadow: 0 0 16px rgba(66, 236, 255, .38);
+}
+
+body.resume-modern .mr_skill_con .mr_skill_circle,
+body.resume-modern .mr_skill_con .mr_skill_delete,
+body.resume-modern .mr_self_l i,
+body.resume-modern #expectJob .mr_job_des i {
+  display: none;
+}
+
+body.resume-modern .mr_moudle_content .mr_self_l {
+  width: 92px;
+}
+
+body.resume-modern .mr_self_l img {
+  border-radius: 50%;
+  border: 3px solid rgba(223,252,255,.72);
+  box-shadow: 0 0 26px rgba(66,236,255,.24);
+}
+
+body.resume-modern .mr_moudle_content .mr_self_r {
+  width: calc(100% - 104px);
+  color: #d8e6ff;
+}
+
+body.resume-modern .mr_job_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 0;
+}
+
+body.resume-modern .mr_job_info li {
+  width: auto;
+  height: auto;
+  padding: 6px 12px;
+  color: #dffcff;
+  background: rgba(66, 236, 255, .1);
+  border: 1px solid rgba(144,239,255,.18);
+  border-radius: 999px;
+  overflow: visible;
+}
+
+body.resume-modern .mr_bottom,
+body.resume-modern .mr_self_state,
+body.resume-modern .mr_my_qr,
+body.resume-modern .mr_head_r {
+  display: none;
+}
+
+body.resume-modern p,
+body.resume-modern span,
+body.resume-modern div,
+body.resume-modern a {
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 720px) {
+  body.resume-modern #container {
+    padding: 18px 10px 38px;
+  }
+
+  body.resume-modern .m_portrait,
+  body.resume-modern .mr_top_bg {
+    height: 206px;
+    border-radius: 24px 24px 0 0;
+  }
+
+  body.resume-modern .m_portrait > img:not(.opa) {
+    top: 68px;
+    width: 118px;
+    height: 118px;
+  }
+
+  body.resume-modern .mr_baseinfo {
+    padding: 58px 14px 24px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  body.resume-modern .mr_content {
+    padding: 24px 14px 18px;
+    border-radius: 24px;
+  }
+
+  body.resume-modern .mr_title .mr_title_l,
+  body.resume-modern .mr_title .mr_title_r {
+    min-width: 24px;
+  }
+
+  body.resume-modern .mr_title .mr_title_c,
+  body.resume-modern .cust_title span {
+    padding: 6px 16px;
+    font-size: 16px;
+  }
+
+  body.resume-modern .mr_moudle_content .mr_content_l,
+  body.resume-modern .mr_moudle_content .mr_content_r {
+    float: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  body.resume-modern .mr_content_l .l2 {
+    float: none;
+    max-width: none;
+    padding-top: 0;
+  }
+
+  body.resume-modern .mr_content_l .l1 {
+    display: none;
+  }
+
+  body.resume-modern .mr_content_r {
+    margin-top: 10px;
+  }
+
+  body.resume-modern .mr_c_r_t {
+    text-align: left;
+  }
+
+  body.resume-modern .mr_moudle_content .mr_self_l,
+  body.resume-modern .mr_moudle_content .mr_self_r {
+    float: none;
+    width: 100%;
+  }
+
+  body.resume-modern .mr_moudle_content .mr_self_l {
+    height: 84px;
+  }
+
+  body.resume-modern #worksShow ul {
+    grid-template-columns: 1fr;
+  }
+
+  body.resume-modern .mr_skill_con {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  body.resume-modern .mr_skill_con .mr_skill_name {
+    flex: none;
+    width: auto;
+    text-align: left;
+  }
+
+  body.resume-modern .mr_skill_con .mr_skill_plan {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body.resume-modern .mr_name {
+    font-size: 34px;
+  }
+
+  body.resume-modern .info_t,
+  body.resume-modern .info_b,
+  body.resume-modern .mr_job_info {
+    justify-content: flex-start;
+  }
+
+  body.resume-modern .shenfen,
+  body.resume-modern .base_info,
+  body.resume-modern .mobile,
+  body.resume-modern .email,
+  body.resume-modern .mr_sns a,
+  body.resume-modern .mr_job_info li {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  body.resume-modern .mr_jobe_list,
+  body.resume-modern .mr_wu_show,
+  body.resume-modern .expectjob_list .mr_job_des,
+  body.resume-modern .mr_wo_show {
+    padding: 16px 14px;
+    border-radius: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.resume-modern *,
+  body.resume-modern *::before,
+  body.resume-modern *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
 }
 </style>
 	<div class="clearfixs mr_created mr_preview">
