@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>2026.02-03：GT/GV 自举与错位问题</title>
+<link rel="stylesheet" href="../stylesheets/article.css">
+</head>
+<body>
+<main>
+<article>
+<h1>AI系列之《2026.02-03：GT/GV 自举与错位问题》</h1>
+<p class="meta">2026年03月31日 00:00 ｜ 来源：Note36.md ｜ HELIX 手稿阶段总结</p>
+<section class="figure_grid">
+<figure>
+<img src="../images/helix/helix-202602-gt-bootstrap-gv.png" alt="GT 自举到 GV 层，展示高层结构向基础视觉单元的组织">
+<figcaption>GT 自举到 GV 层，展示高层结构向基础视觉单元的组织。<br>来源：HELIX_THEORY/手稿/assets/794_GT自举到GV层.png</figcaption>
+</figure>
+<figure>
+<img src="../images/helix/helix-202602-zero-to-one-mismatch.png" alt="0 识别成 1 但匹配率仍高的问题，体现错位与匹配率缺陷">
+<figcaption>0 识别成 1 但匹配率仍高的问题，体现错位与匹配率缺陷。<br>来源：HELIX_THEORY/手稿/assets/798_0识别成1匹配率还高的问题.png</figcaption>
+</figure>
+<figure>
+<img src="../images/helix/helix-202602-one-recognition-v2.png" alt="1 识别成 1 的方案 v2 效果，用于对比修正方向">
+<figcaption>1 识别成 1 的方案 v2 效果，用于对比修正方向。<br>来源：HELIX_THEORY/手稿/assets/800_1识别成1的问题方案v2效果.png</figcaption>
+</figure>
+</section>
+<p class="period">来源：Note36.md</p>
+<p>2 到 3 月，手稿持续提升识别准确度，深入调试 ST/GT 竞争浮现，加入显著度，并围绕 GT 自举 GV、ST 错位、GV 错位、GT 类比和切图实现反复回测。</p>
+<p>错位问题说明视觉特征并不是静态符号，它依赖空间位置、比例、局部关系和对齐方式。GT 自举 GV 的尝试，是希望从更高层结构反推或组织更基础的视觉单元。</p>
+<p>切图实现进一步把识别问题具体化：如何把图像切成既能保持整体关系，又能进入局部匹配的结构。这个阶段为 4 月的加权求和切图法做了直接铺垫。</p>
+</article>
+<nav class="post_nav">
+<a href="helix-202512.html">上一篇：2025.12-2026.01：ST/稀疏码识别优化与特征浮现</a>
+<a href="helix-202604.html">下一篇：2026.04-05：加权求和切图法与视觉注意力</a>
+<a class="wide" href="helix-research-notes-202112-202606.html#p202602">查看合集归档中的本节</a>
+<a class="wide" href="../index.html#blogs">返回首页 Blog 列表</a>
+</nav>
+</main>
+</body>
+</html>

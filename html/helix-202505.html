@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>2025.05-07：自适应粒度与组特征自举</title>
+<link rel="stylesheet" href="../stylesheets/article.css">
+</head>
+<body>
+<main>
+<article>
+<h1>AI系列之《2025.05-07：自适应粒度与组特征自举》</h1>
+<p class="meta">2025年07月31日 00:00 ｜ 来源：Note35.md ｜ HELIX 手稿阶段总结</p>
+<section class="figure_grid">
+<figure>
+<img src="../images/helix/helix-202505-adaptive-granularity-misalignment.png" alt="自适应粒度中的错位问题示图">
+<figcaption>自适应粒度中的错位问题示图。<br>来源：HELIX_THEORY/手稿/assets/758_自适应粒度_错位问题示图.png</figcaption>
+</figure>
+<figure>
+<img src="../images/helix/helix-202505-scale-granularity.png" alt="比例变化时如何切粒度，展示尺度变化下的识别策略">
+<figcaption>比例变化时如何切粒度，展示尺度变化下的识别策略。<br>来源：HELIX_THEORY/手稿/assets/764_比例变化时如何切粒度.png</figcaption>
+</figure>
+<figure>
+<img src="../images/helix/helix-202505-local-to-global-feature.png" alt="局部特征到整体特征，体现自举和聚合方向">
+<figcaption>局部特征到整体特征，体现自举和聚合方向。<br>来源：HELIX_THEORY/手稿/assets/757_局部特征到整体特征.png</figcaption>
+</figure>
+</section>
+<p class="period">来源：Note35.md</p>
+<p>5 到 7 月围绕自适应粒度展开：开发、支持组特征、优化、废弃组特征方案、继续测试，并在 7 月将组特征识别改为自举。</p>
+<p>自适应粒度要解决的是视觉尺度问题：太粗会丢细节，太细会爆炸。系统需要根据任务和识别结果，在合适粒度上组织特征。</p>
+<p>组特征从支持到废弃再到自举，体现出这一阶段的探索性。自举意味着系统希望从已有识别结构中生长出更高层特征，而不是完全依赖外部标注或固定规则。</p>
+</article>
+<nav class="post_nav">
+<a href="helix-202503.html">上一篇：2025.03-04：多码特征体系成形</a>
+<a href="helix-202509.html">下一篇：2025.09-11：组特征独立模块与 GT 通路简化</a>
+<a class="wide" href="helix-research-notes-202112-202606.html#p202505">查看合集归档中的本节</a>
+<a class="wide" href="../index.html#blogs">返回首页 Blog 列表</a>
+</nav>
+</main>
+</body>
+</html>

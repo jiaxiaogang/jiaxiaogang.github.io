@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>2022.03-04：强化训练与 TC 数据流重整</title>
+<link rel="stylesheet" href="../stylesheets/article.css">
+</head>
+<body>
+<main>
+<article>
+<h1>AI系列之《2022.03-04：强化训练与 TC 数据流重整》</h1>
+<p class="meta">2022年04月30日 00:00 ｜ 来源：Note25.md ｜ HELIX 手稿阶段总结</p>
+<section class="figure_grid">
+<figure>
+<img src="../images/helix/helix-202203-training-console.png" alt="强化训练控制台，让试错训练过程可观察">
+<figcaption>强化训练控制台，让试错训练过程可观察。<br>来源：HELIX_THEORY/手稿/assets/593_强化训练控制台2.png</figcaption>
+</figure>
+<figure>
+<img src="../images/helix/helix-202203-tc-dataflow.png" alt="TC 数据流逐层宽入窄出示图，展示候选生成与筛选的结构">
+<figcaption>TC 数据流逐层宽入窄出示图，展示候选生成与筛选的结构。<br>来源：HELIX_THEORY/手稿/assets/607_TC数据流逐层宽入窄出示图.png</figcaption>
+</figure>
+</section>
+<p class="period">来源：Note25.md</p>
+<p>3 到 4 月，手稿转入强化学习训练、定帧被动感官、单帧输入单模型、TOMVision 工作记忆可视化、强化训练控制台，以及 TC 数据流整理。</p>
+<p>强化训练的价值不只是“多跑几次”，而是给系统一个稳定的试错场。定帧与单帧模型让视觉输入从连续世界中被切出可训练的片段；工作记忆可视化则让内部状态可观察，方便定位反省、识别、方案竞争中的错误。</p>
+<p>这一阶段还废弃了 fo 的 mv 指向和 P 任务，说明架构开始主动清理早期概念债务。TC 数据流的“整体兼顾与各线竞争”成为关键：系统既要保留全局目标，又要允许不同候选线并行竞争。</p>
+</article>
+<nav class="post_nav">
+<a href="helix-202201.html">上一篇：2022.01-02：相近匹配、想像力与双树融合</a>
+<a href="helix-202205.html">下一篇：2022.05-06：快慢思考与 S 综合排名</a>
+<a class="wide" href="helix-research-notes-202112-202606.html#p202203">查看合集归档中的本节</a>
+<a class="wide" href="../index.html#blogs">返回首页 Blog 列表</a>
+</nav>
+</main>
+</body>
+</html>

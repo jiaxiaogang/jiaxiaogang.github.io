@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>2025.09-11：组特征独立模块与 GT 通路简化</title>
+<link rel="stylesheet" href="../stylesheets/article.css">
+</head>
+<body>
+<main>
+<article>
+<h1>AI系列之《2025.09-11：组特征独立模块与 GT 通路简化》</h1>
+<p class="meta">2025年11月30日 00:00 ｜ 来源：Note35.md ｜ HELIX 手稿阶段总结</p>
+<section class="figure_grid">
+<figure>
+<img src="../images/helix/helix-202509-feature-recognition-path.png" alt="特征识别层级通路，对应 GT 通路简化">
+<figcaption>特征识别层级通路，对应 GT 通路简化。<br>来源：HELIX_THEORY/手稿/assets/790_特征识别层级通路.png</figcaption>
+</figure>
+<figure>
+<img src="../images/helix/helix-202509-gt-inaccuracy.png" alt="GT 识别结果仍不准确问题，说明通路简化前的误差来源">
+<figcaption>GT 识别结果仍不准确问题，说明通路简化前的误差来源。<br>来源：HELIX_THEORY/手稿/assets/789_GT识别结果仍不准确问题.png</figcaption>
+</figure>
+</section>
+<p class="period">来源：Note35.md</p>
+<p>9 到 11 月，组特征改回独立网络模块，并测试独立模块的组特征与特征演化竞争浮现。随后，GT 识别 ref 通路被简化。</p>
+<p>组特征独立化，说明它不适合只作为其他结构的附属逻辑。独立模块可以让组特征拥有自己的识别、竞争和演化过程。</p>
+<p>GT 通路简化则是为后续准确度优化铺路。视觉系统如果通路太复杂，错误来源会变得难以追踪；简化 ref 通路后，才能更清楚地比较 ST、GT、GV 等层级的贡献。</p>
+</article>
+<nav class="post_nav">
+<a href="helix-202505.html">上一篇：2025.05-07：自适应粒度与组特征自举</a>
+<a href="helix-202512.html">下一篇：2025.12-2026.01：ST/稀疏码识别优化与特征浮现</a>
+<a class="wide" href="helix-research-notes-202112-202606.html#p202509">查看合集归档中的本节</a>
+<a class="wide" href="../index.html#blogs">返回首页 Blog 列表</a>
+</nav>
+</main>
+</body>
+</html>

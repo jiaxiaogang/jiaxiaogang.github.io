@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>2026.04-05：加权求和切图法与视觉注意力</title>
+<link rel="stylesheet" href="../stylesheets/article.css">
+</head>
+<body>
+<main>
+<article>
+<h1>AI系列之《2026.04-05：加权求和切图法与视觉注意力》</h1>
+<p class="meta">2026年05月31日 00:00 ｜ 来源：Note37.md、Note38.md ｜ HELIX 手稿阶段总结</p>
+<section class="figure_grid">
+<figure>
+<img src="../images/helix/helix-202604-bootstrap-match-low.png" alt="自举匹配数太低问题，是加权求和切图法前后的关键调试点">
+<figcaption>自举匹配数太低问题，是加权求和切图法前后的关键调试点。<br>来源：HELIX_THEORY/手稿/assets/803_自举匹配数太低问题.png</figcaption>
+</figure>
+<figure>
+<img src="../images/helix/helix-202604-cursive-visual-recognition.png" alt="以草书为例分析视觉识别，展示注意力与局部结构">
+<figcaption>以草书为例分析视觉识别，展示注意力与局部结构。<br>来源：HELIX_THEORY/手稿/assets/804_草书为例分析视觉识别.png</figcaption>
+</figure>
+<figure>
+<img src="../images/helix/helix-202604-gt-match-rate-ok.png" alt="GT 识别匹配率初步回测 OK">
+<figcaption>GT 识别匹配率初步回测 OK。<br>来源：HELIX_THEORY/手稿/assets/805_GT识别匹配率初步回测OK.png</figcaption>
+</figure>
+</section>
+<p class="period">来源：Note37.md、Note38.md</p>
+<p>4 到 5 月，视觉系统进入密集迭代：加权求和切图法、自举匹配数、连续视觉专注循环、从绝对准度转向竞争浮现、高清图性能、摄像头彩图、视觉注意力递归、任务注意力、动体注意力和无意注意力。</p>
+<p>高清图性能总结很关键：旧做法会随像素规模爆炸，新做法改成先粗略识别约 1000 像素，再由注意力选择局部 CropRect 进入下一轮识别。这样把爆炸式计算变成可递归的注意力循环。</p>
+<p>“绝对准度”被放弃，转向“竞争浮现为准”，是这一阶段最重要的思想变化。系统不再执着每次局部判断都绝对正确，而是让多个候选在连续识别、注意力递归和任务目标中竞争，最终浮现稳定结果。</p>
+</article>
+<nav class="post_nav">
+<a href="helix-202602.html">上一篇：2026.02-03：GT/GV 自举与错位问题</a>
+<a href="helix-202606.html">下一篇：2026.06：递进淘汰、聚焦行为与视觉接入内核</a>
+<a class="wide" href="helix-research-notes-202112-202606.html#p202604">查看合集归档中的本节</a>
+<a class="wide" href="../index.html#blogs">返回首页 Blog 列表</a>
+</nav>
+</main>
+</body>
+</html>
